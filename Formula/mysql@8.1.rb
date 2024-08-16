@@ -1,4 +1,4 @@
-class Mysql < Formula
+class MysqlAT81 < Formula
   desc "Open source relational database management system"
   homepage "https://dev.mysql.com/doc/refman/8.0/en/"
   # TODO: Check if we can use unversioned `protobuf` at version bump

@@ -1,4 +1,4 @@
-class Mysql < Formula
+class MysqlAT83 < Formula
   desc "Open source relational database management system"
   homepage "https://dev.mysql.com/doc/refman/8.3/en/"
   url "https://cdn.mysql.com/Downloads/MySQL-8.3/mysql-boost-8.3.0.tar.gz"

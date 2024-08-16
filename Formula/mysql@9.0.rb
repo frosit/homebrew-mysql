@@ -1,4 +1,4 @@
-class Mysql < Formula
+class MysqlAT90 < Formula
   desc "Open source relational database management system"
   homepage "https://dev.mysql.com/doc/refman/9.0/en/"
   url "https://cdn.mysql.com/Downloads/MySQL-9.0/mysql-9.0.1.tar.gz"
