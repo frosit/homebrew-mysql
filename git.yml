@@ -1,0 +1,39 @@
+versions:
+  9.0:
+    sha: 6f3f3de7af8ddcb1cdbf83b42f92456b231c4262
+    filepath: Formula/mysql@9.0.rb
+    upstream_revision: c4d23e33707e57463a07941d2bc6abd43fd1a9b4
+    upstream_filepath: Formula/m/mysql.rb
+  8.4:
+    sha: 6b23cfd1895710f6c225c1496053088f9179bb03
+    filepath: Formula/mysql@8.4.rb
+    upstream_revision: cb852fd860680f3352a675b2085122fb62cbdbc0
+    upstream_filepath: Formula/m/mysql@8.4.rb
+  8.3:
+    sha: cc839354ef81de6d505f58fb1ee98d103e3022fc
+    filepath: Formula/mysql@8.3.rb
+    upstream_revision: 579f331b486821a037eccd3cb36832b18141b5b3
+    upstream_filepath: Formula/m/mysql.rb
+  8.2:
+    sha: d63eb62416e96ba78cbd73238b7caecf42394e95
+    filepath: Formula/mysql@8.2.rb
+    upstream_revision: 1339a076aed1714b99e8b226ad3bdd64feb08b6f
+    upstream_filepath: Formula/m/mysql.rb
+  8.1:
+    sha: 51d3ff868dfa550738b33d1e93a3bbe3c2aec776
+    filepath: Formula/mysql@8.1.rb
+    upstream_revision: b0701f07b5eabcbc67fff9c42582f257a4c6ffa2
+    upstream_filepath: Formula/m/mysql.rb
+    raw_url: https://raw.githubusercontent.com/Homebrew/homebrew-core/b0701f07b5eabcbc67fff9c42582f257a4c6ffa2/Formula/m/mysql.rb
+  8.0:
+    sha:
+    filepath: Formula/mysql@8.0.rb
+    upstream_filepath: Formula/m/mysql.rb
+    upstream_url: https://raw.githubusercontent.com/Homebrew/Homebrew/HEAD/Formula/mysql.rb
+    upstream_revision: 442f9cc511ce6dfe75b96b2c83749d90dde914d2
+    raw_url: https://raw.githubusercontent.com/Homebrew/homebrew-core/442f9cc511ce6dfe75b96b2c83749d90dde914d2/Formula/m/mysql.rb
+  5.7:
+    sha: 99b96f073a33107e8b3afaee1ac99505888a98ef
+    upstream_revision: ab16d74d27def2bd1e25ba5a585697ef2584f65c
+    upstream_filepath: Formula/m/mysql@5.7.rb
+    filepath: Formula/mysql@5.7.rb
