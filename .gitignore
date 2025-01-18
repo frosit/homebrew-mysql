@@ -1,4 +1,6 @@
 /.idea
-/bin/*.json
-/bin
 logic.md
+/.env
+/tmp
+/dev.md
+/logic.md

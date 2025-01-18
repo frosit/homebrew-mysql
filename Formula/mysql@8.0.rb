@@ -23,6 +23,8 @@ class MysqlAT80 < Formula
     sha256 x86_64_linux:   "e81e56785691e7ea4d0af44e4ce5d73035bc09959b9b80ea2300d1df66ef2958"
   end
 
+  keg_only :versioned_formula
+
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
   depends_on "icu4c"

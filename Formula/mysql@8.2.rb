@@ -21,6 +21,8 @@ class MysqlAT82 < Formula
     sha256 x86_64_linux:   "122ae0c23f4a028e4a7094dc178102b50e03ae3ebe6333564e0da85c41a42088"
   end
 
+  keg_only :versioned_formula
+
   depends_on "bison" => :build
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
