@@ -45,9 +45,6 @@ class MysqlAT80 < Formula
     depends_on "libtirpc"
   end
 
-  conflicts_with "mariadb", "percona-server",
-    because: "mysql, mariadb, and percona install the same binaries"
-
   fails_with gcc: "5" # for C++17
 
   # Patch out check for Homebrew `boost`.

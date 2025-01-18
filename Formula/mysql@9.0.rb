@@ -46,9 +46,6 @@ class MysqlAT90 < Formula
     depends_on "libtirpc"
   end
 
-  conflicts_with "mariadb", "percona-server",
-    because: "mysql, mariadb, and percona install the same binaries"
-
   fails_with :clang do
     build 1400
     cause "Requires C++20"
