@@ -24,7 +24,7 @@ class MysqlAT57 < Formula
   depends_on "cmake" => :build
   depends_on "libevent"
   depends_on "lz4"
-  depends_on "openssl@1.1"
+  depends_on "openssl@3"
   depends_on "protobuf"
 
   uses_from_macos "curl"

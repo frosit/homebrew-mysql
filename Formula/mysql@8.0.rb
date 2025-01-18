@@ -3,24 +3,14 @@ class MysqlAT80 < Formula
   homepage "https://dev.mysql.com/doc/refman/8.0/en/"
   # TODO: Check if we can use unversioned `protobuf` at version bump
   # https://bugs.mysql.com/bug.php?id=111469
-  url "https://cdn.mysql.com/Downloads/MySQL-8.0/mysql-boost-8.0.33.tar.gz"
-  sha256 "ae31e6368617776b43c82436c3736900067fada1289032f3ac3392f7380bcb58"
+  url "https://cdn.mysql.com/Downloads/MySQL-8.0/mysql-boost-8.0.40.tar.gz"
+  sha256 "eb34a23d324584688199b4222242f4623ea7bca457a3191cd7a106c63a7837d9"
   license "GPL-2.0-only" => { with: "Universal-FOSS-exception-1.0" }
   revision 3
 
   livecheck do
     url "https://dev.mysql.com/downloads/mysql/?tpl=files&os=src"
     regex(/href=.*?mysql[._-](?:boost[._-])?v?(\d+(?:\.\d+)+)\.t/i)
-  end
-
-  bottle do
-    sha256 arm64_ventura:  "11af549049440ae84f55b8458528d0221e82f48f684e3fc05986072ee0c3c64f"
-    sha256 arm64_monterey: "c073ff40137b526df4a10e35d2b6835305ab11643852e2142c8439df9cf8362f"
-    sha256 arm64_big_sur:  "b59c8e983eb22ce5490287c879a4e3b69279f7823789051b1394ee90b20debba"
-    sha256 ventura:        "eaac597b7acdec132c12f44d25937dafb4a048222e4852bb955c20e2318bb6e3"
-    sha256 monterey:       "310625a5f5469241bdf177ee2c224e20f8a51222644751acad06412333d1dc02"
-    sha256 big_sur:        "520c1346f168bea169e39f06e990e09f9afc6e5b4d4b425c48829963ac369991"
-    sha256 x86_64_linux:   "e81e56785691e7ea4d0af44e4ce5d73035bc09959b9b80ea2300d1df66ef2958"
   end
 
   keg_only :versioned_formula
