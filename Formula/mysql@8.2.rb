@@ -11,15 +11,7 @@ class MysqlAT82 < Formula
     regex(/href=.*?mysql[._-](?:boost[._-])?v?(\d+(?:\.\d+)+)\.t/i)
   end
 
-  bottle do
-    sha256 arm64_sonoma:   "c1258ea46d6d392837aaa1f320234aea060fab691d2397079b0e6f3b208af902"
-    sha256 arm64_ventura:  "144466213721433b31d655eabca063dbe569118497bf396ec8fd1d7366ef0bb5"
-    sha256 arm64_monterey: "46f8879999ac802d00a1cefb2333cc9e6cde0a0969bb78a80b4aa20a1d0cf2ac"
-    sha256 sonoma:         "d45a69ad61eca69f2baddf355d91ead82a1d94d2b823fbb95b1177f3d65d6b8e"
-    sha256 ventura:        "9e7e6a2f5247b6a83dff462175fd00fd83b99fa25d783b6b41358a1f9f073f5d"
-    sha256 monterey:       "119af2815771e0d918238e097e47e5ea18a5ab646b71dab890fea431dbfc031e"
-    sha256 x86_64_linux:   "122ae0c23f4a028e4a7094dc178102b50e03ae3ebe6333564e0da85c41a42088"
-  end
+  keg_only :versioned_formula
 
   depends_on "bison" => :build
   depends_on "cmake" => :build
@@ -41,9 +33,6 @@ class MysqlAT82 < Formula
     depends_on "patchelf" => :build
     depends_on "libtirpc"
   end
-
-  conflicts_with "mariadb", "percona-server",
-    because: "mysql, mariadb, and percona install the same binaries"
 
   fails_with gcc: "5" # for C++17
 
@@ -109,11 +98,11 @@ class MysqlAT82 < Formula
     end
 
     # Remove the tests directory
-    rm_rf prefix/"mysql-test"
+    rm_r prefix/"mysql-test"
 
     # Don't create databases inside of the prefix!
     # See: https://github.com/Homebrew/homebrew/issues/4975
-    rm_rf prefix/"data"
+    rm_r prefix/"data"
 
     # Fix up the control script and link into bin.
     inreplace "#{prefix}/support-files/mysql.server",

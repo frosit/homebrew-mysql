@@ -21,6 +21,8 @@ class MysqlAT83 < Formula
     sha256 x86_64_linux:   "66c4a58b3f7f376bdcdec40dd747ccb544cac7e167cd359392cb3877df36bafe"
   end
 
+  keg_only :versioned_formula
+
   depends_on "bison" => :build
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
@@ -41,9 +43,6 @@ class MysqlAT83 < Formula
     depends_on "patchelf" => :build
     depends_on "libtirpc"
   end
-
-  conflicts_with "mariadb", "percona-server",
-    because: "mysql, mariadb, and percona install the same binaries"
 
   fails_with gcc: "5" # for C++17
 

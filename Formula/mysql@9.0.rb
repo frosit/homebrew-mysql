@@ -20,6 +20,8 @@ class MysqlAT90 < Formula
     sha256 x86_64_linux:   "60ea8b0e209b2e640dd675b158ba8f1f8c39dfe6ded013c0e164eef2bfe689f8"
   end
 
+  keg_only :versioned_formula
+
   depends_on "bison" => :build
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
@@ -43,9 +45,6 @@ class MysqlAT90 < Formula
     depends_on "patchelf" => :build
     depends_on "libtirpc"
   end
-
-  conflicts_with "mariadb", "percona-server",
-    because: "mysql, mariadb, and percona install the same binaries"
 
   fails_with :clang do
     build 1400

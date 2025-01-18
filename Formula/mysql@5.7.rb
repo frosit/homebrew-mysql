@@ -19,12 +19,12 @@ class MysqlAT57 < Formula
   keg_only :versioned_formula
 
   # https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf
-  #disable! date: "2024-08-01", because: :unsupported
+  # disable! date: "2024-08-01", because: :unsupported
 
   depends_on "cmake" => :build
   depends_on "libevent"
   depends_on "lz4"
-  depends_on "openssl@1.1"
+  depends_on "openssl@3"
   depends_on "protobuf"
 
   uses_from_macos "curl"
